@@ -1,0 +1,64 @@
+<section class="order">
+    <div class="wrapper">
+        <a id="order"></a>
+        <div class="order__wrapper">
+            <div class="order__header">
+                <h2 class="order__title">Оформление <span>заказа</span></h2>
+                <p class="order__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            </div>
+            <div class="order__scheme">
+                <div class="step">
+                    <div class="step__point">
+                        <div class="step__icon search"></div>
+                    </div>
+                    <div class="step__text">Lorem ipsum dolor
+                        sit amet</div>
+                </div>
+                <div class="step">
+                    <div class="step__point">
+                        <div class="step__icon discount"></div>
+                    </div>
+                    <div class="step__text">Сonsecteturadipiscing elit</div>
+                </div>
+                <div class="step">
+                    <div class="step__point">
+                        <div class="step__icon documents"></div>
+                    </div>
+                    <div class="step__text">Sed do eiusmod tempor</div>
+                </div>
+                <div class="step">
+                    <div class="step__point">
+                        <div class="step__icon message"></div>
+                    </div>
+                    <div class="step__text">Esse cillum dolore
+                        eu fugiat</div>
+                </div>
+                <div class="step">
+                    <div class="step__point">
+                        <div class="step__icon paid"></div>
+                    </div>
+                    <div class="step__text">Excepteur sint occaecat cupidatat non proident</div>
+                </div>
+            </div>
+            <form action="#" id="form" class="order__form form">
+                <div class="form__container">
+                    @@include('_dropdown.html')
+                    <input class="form__item email" type="email" placeholder="Ваш e-mail" name="email">
+                    <input class="form__item name" type="text" placeholder="Ваше имя" name="name">
+                    <div class="form__item range">
+                        <div class="range__label">
+                            <label for="range">Lorem ipsum, dolor sit amet consectetur adipisicing</label>
+                            <span>75%</span>
+                        </div>
+                        <input class="range__input" min="0" max="100" value="75" type="range" name="range">
+                    </div>
+                    <div class="form__item file">
+                        <input class="file__input" type="file" name="file" accept=".jpg, .png">
+                        <button class="file__button"><div class="file__icon"></div>Прикрепить файл</button>
+                    </div>
+                </div>
+                <input class="form__submit" type="submit" value="Отправить" name="submit">
+            </form>
+        </div>
+    </div>
+</section>
