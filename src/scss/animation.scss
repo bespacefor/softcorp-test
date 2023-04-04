@@ -1,0 +1,19 @@
+@keyframes changeColor {
+    0% {
+        color: $primary-color;
+    }
+
+    100% {
+        color: $accent-color;
+    }
+}
+
+@keyframes burgerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
