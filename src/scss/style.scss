@@ -8,13 +8,46 @@
     }
 }
 
-@import 'fonts';
+@import "fonts";
+@import "vars";
+@import "header";
+@import "about";
+@import "order";
+@import "dropdown";
+@import "footer";
+@import "animation";
 
-body {
-    color: blue;
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div {
-    background: url('../img/photo.jpg') 0 0 no-repeat;
+body {
+    color: $primary-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+        max-width: 850px;
+    }
+
+    @media (min-width: 600px) and (max-width: 899px) {
+        max-width: 550px;
+    }
+
+    @media (min-width: 320px) and (max-width: 599px) {
+        max-width: 310px;
+    }
 }
