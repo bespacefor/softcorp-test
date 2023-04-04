@@ -1,0 +1,144 @@
+.about {
+    color: $secondary-color;
+    background-image: url("../img/photo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        width: 780px;
+
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            width: 90%;
+            margin: 0 auto;
+            gap: 50px;
+        }
+    }
+
+    &__title {
+        font-family: $lato-bold;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        margin-top: 203px;
+
+        @media (max-width: 900px) {
+            font-size: 46px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 26px;
+            margin-top: 153px;
+        }
+
+        span {
+            color: $accent-color;
+        }
+    }
+
+    &__text {
+        font-family: $lato-bold;
+        font-size: 20px;
+        line-height: 24px;
+
+        @media (max-width: 900px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        margin-top: 10px;
+
+        li {
+            font-family: $lato-regular;
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 26px;
+            position: relative;
+
+            @media (max-width: 900px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 14px;
+            }
+
+            &::before {
+                content: "";
+                width: 5px;
+                height: 1.5px;
+                background: url("../img/bullet.svg") no-repeat center;
+                background-size: cover;
+                top: 10px;
+                left: 10px;
+                position: absolute;
+            }
+        }
+    }
+
+    &__call-to-actions {
+        display: flex;
+        gap: 30px;
+        width: 396px;
+        height: 43px;
+        margin-bottom: 202px;
+
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 152px;
+        }
+
+        .button {
+            font-family: $lato-regular;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 15px 0;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $accent-color;
+                background-color: rgba(16, 16, 29, 0.9);
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+                border: 1px solid $accent-color;
+                transition: 0.3s ease-out;
+            }
+        }
+    }
+
+    &__order {
+        color: $primary-color;
+        background-color: $accent-color;
+        border: 1px solid $primary-color;
+    }
+
+    &__call {
+        color: $secondary-color;
+        background-color: $primary-color;
+        border: 1px solid $secondary-color;
+    }
+}
