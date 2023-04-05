@@ -572,12 +572,23 @@
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background: transparent;
   cursor: pointer;
 }
 
 .form__container .range__input:focus {
   outline: none;
+}
+
+.form__container .range__input:focus::-webkit-slider-thumb {
+  border: 1px solid #286690;
+  outline: 2px solid #286690;
+  outline-offset: 2px;
+}
+
+.form__container .range__input:focus::-moz-range-thumb {
+  border: 1px solid #286690;
+  outline: 2px solid #286690;
+  outline-offset: 2px;
 }
 
 .form__container .range__input::-webkit-slider-runnable-track {
@@ -595,6 +606,14 @@
   background-color: #3E9CDC;
   border: 3px solid #286690;
   border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+
+.form__container .range__input::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #3E9CDC;
   height: 24px;
   width: 24px;
 }
