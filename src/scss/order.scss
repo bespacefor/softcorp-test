@@ -251,11 +251,22 @@
             &__input {
                 -webkit-appearance: none;
                 appearance: none;
-                background: transparent;
                 cursor: pointer;
 
                 &:focus {
                     outline: none;
+
+                    &::-webkit-slider-thumb {
+                        border: 1px solid $order-point-color;
+                        outline: 2px solid $order-point-color;
+                        outline-offset: 2px;
+                    }
+
+                    &::-moz-range-thumb {
+                        border: 1px solid $order-point-color;
+                        outline: 2px solid $order-point-color;
+                        outline-offset: 2px;
+                    }
                 }
 
                 &::-webkit-slider-runnable-track {
@@ -273,6 +284,14 @@
                     background-color: $accent-color;
                     border: 3px solid $order-point-color;
                     border-radius: 50%;
+                    height: 24px;
+                    width: 24px;
+                }
+
+                &::-moz-range-thumb {
+                    border: none;
+                    border-radius: 0;
+                    background-color: $accent-color;
                     height: 24px;
                     width: 24px;
                 }
